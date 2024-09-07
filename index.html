@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIMORA Watches</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://mail.google.com/mail/u/0?ui=2&ik=6fe109d77e&attid=0.1&permmsgid=msg-a:r3603021652760287786&th=191cdee5cde23fcd&view=att&disp=safe&realattid=f_m0sj5fa10');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            animation: slideIn 1s ease-in-out;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            animation: bounce 2s infinite;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 2em;
+            color: orange;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            animation: slideIn 2s ease-in-out;
+        }
+        .product {
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 250px;
+            animation: fadeIn 2.5s ease-in-out, pulse 3s infinite;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .product img:hover {
+            transform: scale(1.1);
+        }
+        .product h3 {
+            color: orange;
+        }
+        .product p {
+            color: white;
+        }
+        .product .price {
+            color: #ffcc00;
+            font-size: 1.2em;
+        }
+        .product .old-price {
+            text-decoration: line-through;
+            color: #ff6666;
+        }
+        .product a {
+            text-decoration: none;
+        }
+        .product button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .product button:hover {
+            background-color: #ff9900;
+        }
+        .view-all {
+            margin: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .view-all a {
+            text-decoration: none;
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .view-all a:hover {
+            background-color: #ff9900;
+        }
+        .footer {
+            margin: 20px;
+            animation: fadeIn 4s ease-in-out;
+        }
+        .footer a {
+            text-decoration: none;
+            color: orange;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>RIMORA</h1>
+        <h2>WATCHES</h2>
+    </div>
+    <div class="product">
+        <img src="https://www.rimora.store/cdn/shop/files/147_1920x1920.png?v=1723388261" alt="Montre Mustang GT500">
+        <h3>MUSTANG GT500 - RED</h3>
+        <p>Rimora Watches</p>
+        <p class="price">$99.00 <span class="old-price">$125.00</span></p>
+        <a href="https://www.rimora.store/products/mustang-gt500"><button>Add To Cart</button></a>
+    </div>
+  <div class="product">
+        <img src="https://www.rimora.store/cdn/shop/files/55_1920x1920.png?v=1723388309" alt="Montre Mustang GT500">
+        <h3>MERSEDES AMG - GREEN</h3>
+        <p>Rimora Watches</p>
+        <p class="price">$99.00 <span class="old-price">$125.00</span></p>
+        <a href="https://www.rimora.store/products/mersedes-amg-1"><button>Add To Cart</button></a>
+    </div>
+  <div class="product">
+        <img src="https://www.rimora.store/cdn/shop/files/28_1920x1920.png?v=1723388231" alt="Montre Mustang GT500">
+        <h3>LAMBORGHINI HURACAN - YELLOW</h3>
+        <p>Rimora Watches</p>
+        <p class="price">$99.00 <span class="old-price">$125.00</span></p>
+        <a href="https://www.rimora.store/products/lamborghini-huracan-1"><button>Add To Cart</button></a>
+    </div>
+  <div class="product">
+        <img src="https://www.rimora.store/cdn/shop/files/41_1920x1920.png?v=1723388220" alt="Montre Mustang GT500">
+        <h3>NISMO GTR - ORANGE</h3>
+        <p>Rimora Watches</p>
+        <p class="price">$99.00 <span class="old-price">$125.00</span></p>
+        <a href="https://www.rimora.store/products/nismo-gtr"><button>Add To Cart</button></a>
+    </div>
+    <!-- Ajoute ici d'autres produits de la même manière -->
+    <div class="view-all">
+        <a href="https://www.rimora.store/collections/all">View All</a>
+    </div>
+    <div class="footer">
+        <a href="https://www.tiktok.com/@shadow_ff18?_t=8pWw9bERG0u&_r=1">@shadow_ff18</a>
+    </div>
+</body>
+</html>
